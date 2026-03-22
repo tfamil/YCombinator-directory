@@ -32,16 +32,9 @@ pip install -r requirements.txt
 
 ```bash
 # Scrape 500 companies (default)
-python yc_scraper.py
+python yc_scraper.py --limit 1000 --output startups.csv
+python yc_scraper.py --no-cache  # Fresh data
 
-# Scrape specific number of companies
-python yc_scraper.py --limit 100
-
-# Force fresh scrape (ignore cache)
-python yc_scraper.py --no-cache
-
-# Custom output file
-python yc_scraper.py --output my_output.csv
 ```
 
 ## Final Results
